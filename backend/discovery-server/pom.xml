@@ -11,20 +11,19 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>common-lib</artifactId>
+    <artifactId>discovery-server</artifactId>
 
     <dependencies>
-        <!-- Lombok -->
+        <!-- Eureka Server -->
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
 
-        <!-- Jackson for JSON Processing -->
+        <!-- Spring Boot Web -->
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
 
